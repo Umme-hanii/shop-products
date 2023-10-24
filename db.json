@@ -37,15 +37,6 @@
       "id": 4
     },
     {
-      "productName": "",
-      "category": "",
-      "date": "",
-      "freshness": "",
-      "price": "",
-      "comment": "",
-      "id": 5
-    },
-    {
       "productName": "Pizza",
       "category": "Food",
       "date": "2023-10-12T18:30:00.000Z",
@@ -53,6 +44,15 @@
       "price": 200,
       "comment": "Freshly baked Pizza",
       "id": 6
+    },
+    {
+      "productName": "Samsung note 15",
+      "category": "Electronics",
+      "date": "2023-10-05T18:30:00.000Z",
+      "freshness": "Refurbished",
+      "price": 29000,
+      "comment": "",
+      "id": 7
     }
   ],
   "comments": [

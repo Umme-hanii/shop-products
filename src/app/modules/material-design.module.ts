@@ -9,6 +9,8 @@ import { MatInputModule } from '@angular/material/input'
 import { MatSelectModule } from '@angular/material/select'
 import { MatDatepickerModule } from '@angular/material/datepicker'
 import { MatRadioModule } from '@angular/material/radio'
+import { MatCardModule } from '@angular/material/card'
+import { MatTableModule } from '@angular/material/table'
 
 @NgModule({
   imports: [
@@ -22,6 +24,8 @@ import { MatRadioModule } from '@angular/material/radio'
     MatDatepickerModule,
     MatNativeDateModule,
     MatRadioModule,
+    MatCardModule,
+    MatTableModule,
   ],
   exports: [
     MatToolbarModule,
@@ -34,6 +38,8 @@ import { MatRadioModule } from '@angular/material/radio'
     MatDatepickerModule,
     MatNativeDateModule,
     MatRadioModule,
+    MatCardModule,
+    MatTableModule,
   ],
 })
 export class MaterialDesignModule {}

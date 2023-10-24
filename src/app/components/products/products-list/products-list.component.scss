@@ -1,0 +1,24 @@
+mat-card {
+  margin: 5rem;
+  mat-card-header {
+    color: #a44a3f;
+  }
+}
+
+table {
+  width: 100%;
+  padding: 2rem;
+
+  .mat-header-cell {
+    color: #a44a3f;
+  }
+
+  .mat-cell {
+    color: #133c3e;
+  }
+
+  .mat-column-name {
+    font-style: italic;
+    font-weight: 500;
+  }
+}
