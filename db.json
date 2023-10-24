@@ -35,6 +35,24 @@
       "price": 28000,
       "comment": "The new one plus Nord 2T 5G",
       "id": 4
+    },
+    {
+      "productName": "",
+      "category": "",
+      "date": "",
+      "freshness": "",
+      "price": "",
+      "comment": "",
+      "id": 5
+    },
+    {
+      "productName": "Pizza",
+      "category": "Food",
+      "date": "2023-10-12T18:30:00.000Z",
+      "freshness": "New",
+      "price": 200,
+      "comment": "Freshly baked Pizza",
+      "id": 6
     }
   ],
   "comments": [

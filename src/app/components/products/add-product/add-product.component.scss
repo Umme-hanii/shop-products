@@ -31,3 +31,6 @@ mat-form-field {
   color: #fff;
   background-color: #133c3e;
 }
+#add-btn:disabled {
+  background-color: grey;
+}

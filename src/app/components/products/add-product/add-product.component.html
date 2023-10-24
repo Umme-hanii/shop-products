@@ -48,6 +48,13 @@
   </mat-dialog-content>
   <mat-dialog-actions class="action-btns" align="end">
     <button mat-raised-button id="close-btn" mat-dialog-close>Close</button>
-    <button mat-raised-button id="add-btn" (click)="addProduct()">Add</button>
+    <button
+      mat-raised-button
+      id="add-btn"
+      [disabled]="productForm.invalid"
+      (click)="addProduct()"
+    >
+      Add
+    </button>
   </mat-dialog-actions>
 </div>
