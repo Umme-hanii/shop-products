@@ -1,0 +1,50 @@
+{
+  "productsList": [
+    {
+      "productName": "Biryani",
+      "category": "Food",
+      "date": "2023-10-22T18:30:00.000Z",
+      "freshness": "New",
+      "price": 500,
+      "comment": "The most delicious and authentic Hyderabadi Dum Biryani !",
+      "id": 1
+    },
+    {
+      "productName": "T Shirt",
+      "category": "Clothing",
+      "date": "2023-10-17T18:30:00.000Z",
+      "freshness": "Refurbished",
+      "price": 1000,
+      "comment": "This is refurbished T Shirt",
+      "id": 2
+    },
+    {
+      "productName": "Jeans",
+      "category": "Clothing",
+      "date": "2023-10-10T18:30:00.000Z",
+      "freshness": "Second Hand",
+      "price": 2000,
+      "comment": "This is second hand thrifted jeans.",
+      "id": 3
+    },
+    {
+      "productName": "One Plus Nord 2T 5G",
+      "category": "Electronics",
+      "date": "2023-10-12T18:30:00.000Z",
+      "freshness": "New",
+      "price": 28000,
+      "comment": "The new one plus Nord 2T 5G",
+      "id": 4
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

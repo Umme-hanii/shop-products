@@ -14,8 +14,12 @@ export class NavBarComponent implements OnInit {
   ngOnInit(): void {}
 
   openDialog(): void {
-    this.dialog.open(AddProductComponent, {
+    const dialogRef = this.dialog.open(AddProductComponent, {
       width: '40%',
+    })
+
+    dialogRef.afterClosed().subscribe((result) => {
+      console.log('result afterClosed', result)
     })
   }
 }
