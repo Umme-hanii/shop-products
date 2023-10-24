@@ -1,0 +1,33 @@
+h1 {
+  color: #133c3e;
+}
+.add-product-dialog {
+  margin: 0.8rem;
+}
+mat-form-field {
+  width: 100%;
+}
+.fresh-radio {
+  border: 1px solid rgb(205, 199, 199);
+  border-radius: 3px;
+  margin-top: 0.5px;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  .radio-group {
+    display: flex;
+    flex-direction: column;
+
+    mat-radio-button {
+      margin: 0.2rem;
+      padding-left: 0.5rem;
+    }
+  }
+}
+#close-btn {
+  color: #fff;
+  background-color: #a44a3f;
+}
+#add-btn {
+  color: #fff;
+  background-color: #133c3e;
+}
