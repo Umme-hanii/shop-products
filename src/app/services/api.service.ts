@@ -15,7 +15,7 @@ export class ApiService {
     return this.http.post<Product>(`${this.api}productsList`, data)
   }
 
-  getAllProducts() {
+  getAllProducts(): Observable<Array<Product>> {
     return this.http.get<Product[]>(`${this.api}productsList`)
   }
 
@@ -25,5 +25,9 @@ export class ApiService {
 
   updateProduct(id: number, product: Product): Observable<Product> {
     return this.http.put<Product>(`${this.api}productsList/${id}`, product)
+  }
+
+  deleteProduct(id: number) {
+    return this.http.delete<Product>(`${this.api}productsList/${id}`)
   }
 }

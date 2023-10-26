@@ -46,10 +46,19 @@ export class ProductsListComponent implements OnInit {
           width: '40%',
           data: productwithId,
         })
+        this.dialog.afterAllClosed.subscribe(() => this.getProducts())
       },
       error: (err) => console.log(err),
     })
   }
 
-  deleteProduct(id: number): void {}
+  deleteProduct(id: number): void {
+    this.apiService.deleteProduct(id).subscribe({
+      next: (res) => {
+        alert(`Product with id ${id} is successfully deleted !`)
+        this.getProducts()
+      },
+      error: (err) => console.log(err.message),
+    })
+  }
 }

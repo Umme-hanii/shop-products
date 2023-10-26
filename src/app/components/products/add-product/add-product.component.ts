@@ -65,7 +65,6 @@ export class AddProductComponent implements OnInit {
       .subscribe({
         next: (res) => {
           alert(`Product with id ${this.data.id} is updated successfully !!!`)
-          console.log(res)
           this.productForm.reset()
           this.dialogRef.close(res)
         },
