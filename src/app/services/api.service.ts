@@ -18,4 +18,12 @@ export class ApiService {
   getAllProducts() {
     return this.http.get<Product[]>(`${this.api}productsList`)
   }
+
+  getProduct(id: number): Observable<Product> {
+    return this.http.get<Product>(`${this.api}productsList/${id}`)
+  }
+
+  updateProduct(id: number, product: Product): Observable<Product> {
+    return this.http.put<Product>(`${this.api}productsList/${id}`, product)
+  }
 }

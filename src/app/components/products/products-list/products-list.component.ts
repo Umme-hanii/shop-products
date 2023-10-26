@@ -3,6 +3,8 @@ import { MatTableDataSource } from '@angular/material/table'
 
 import { Product } from '../../../interfaces/Product'
 import { ApiService } from '../../../services/api.service'
+import { MatDialog } from '@angular/material/dialog'
+import { AddProductComponent } from '../add-product/add-product.component'
 
 @Component({
   selector: 'app-products-list',
@@ -10,11 +12,18 @@ import { ApiService } from '../../../services/api.service'
   styleUrls: ['./products-list.component.scss'],
 })
 export class ProductsListComponent implements OnInit {
-  displayedColumns: string[] = ['name', 'category', 'price', 'date', 'status']
+  displayedColumns: string[] = [
+    'name',
+    'category',
+    'price',
+    'date',
+    'status',
+    'actions',
+  ]
   productsList: Array<Product> = []
   dataSource!: MatTableDataSource<Product>
 
-  constructor(private apiService: ApiService) {}
+  constructor(private apiService: ApiService, private dialog: MatDialog) {}
 
   ngOnInit(): void {
     this.getProducts()
@@ -27,4 +36,20 @@ export class ProductsListComponent implements OnInit {
       console.log(this.productsList)
     })
   }
+
+  editProduct(id: number): void {
+    let productwithId: Product
+    this.apiService.getProduct(id).subscribe({
+      next: (res) => {
+        productwithId = res
+        this.dialog.open(AddProductComponent, {
+          width: '40%',
+          data: productwithId,
+        })
+      },
+      error: (err) => console.log(err),
+    })
+  }
+
+  deleteProduct(id: number): void {}
 }
